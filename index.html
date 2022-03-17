@@ -12,7 +12,7 @@
 
 <body>
   <div class="container">
-    <form onsubmit="searchUser(event)" class="my-4 row">
+    <form onsubmit="search(event)" class="my-4 row">
       <div class="col-10">
         <input type="text" id="username" name="username" class="form-control" placeholder="username" required>
       </div>
@@ -20,9 +20,18 @@
         <button type="submit" class="btn btn-primary">Search</button>
       </div>
     </form>
+
+    <div class="card mb-4">
+      <div class="card-header">Recent Search</div>
+      <div class="card-body">
+        <div id="recent_searches" class="d-flex">
+        </div>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-header">
-        <h3 class="text-center">Github User</h3>
+        Github User
       </div>
       <div class="card-body">
         <div class="d-flex">
